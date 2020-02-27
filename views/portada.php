@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		
         <title>Portada</title>
+        <h2>Prueba Git</h2>
 
 	</head>
 	<body>
@@ -11,7 +12,7 @@
 		<?php 
     	   Template::header(); // pone el header
     	   Template::login($usuario); // pone el formulario de login/logout
-    	   Template::menu(); // pone el menú
+    	   Template::menu(); // pone el menï¿½
 		?>
 		
 		<h2>Botiga de segunda mano</h2>
