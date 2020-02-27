@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Lista de usuarios</title>
+		<title>Lista de usuarios de botiga</title>
 	</head>
 	<body>
 		<?php 
