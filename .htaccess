@@ -1,0 +1,21 @@
+# Evita el listado de directorio
+# Options -Indexes
+
+# Pone en marcha el mod rewrite
+RewriteEngine on
+
+# Base para todas las peticiones (DocumentRoot)
+# RewriteBase /
+
+# REGLAS PARA LA APLICACION
+# Primera regla: solamente el Controlador
+# ejemplo: /anuncio --> /index.php?c=anuncio
+RewriteRule ^([a-z]+)/?$ /index.php?c=$1 [NC,L]
+
+# Segunda regla: Controlador y método
+# ejemplo: /anuncio/create --> /index.php?c=anuncio&m=create
+RewriteRule ^([a-z]+)/([a-z]+)/?$ /index.php?c=$1&m=$2 [NC,L]
+
+# Tercera regla: Controlador, método y parámetro
+# ejemplo: /anuncio/show/4 --> /index.php?c=anuncio&m=show&p=4
+RewriteRule ^([a-z]+)/([a-z]+)/([a-z0-9]+)/?$ /index.php?c=$1&m=$2&p=$3 [NC,L]
